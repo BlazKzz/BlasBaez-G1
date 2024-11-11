@@ -1,0 +1,57 @@
+/* styles.css */
+
+/* Contenedor principal para el componente ProductsCategory */
+.container {
+    max-width: 1170px; /* Ancho máximo */
+    margin: 0 auto; /* Centrar el contenedor */
+    padding: 0 15px; /* Espaciado interno */
+}
+
+/* Estilos para el indicador de carga */
+.loading {
+    display: flex; /* Usar flexbox para centrar */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 50vh; /* Altura del 50% de la ventana */
+}
+
+/* Estilos para la lista de productos */
+.item-list {
+    display: flex; /* Usar flexbox para la lista de productos */
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten a varias líneas */
+    gap: 20px; /* Espacio entre los elementos de la lista */
+}
+
+/* Estilos para cada producto (Item) */
+.item {
+    flex: 1 1 calc(25% - 20px); /* Ajustar el ancho de los elementos, con un margen */
+    box-sizing: border-box; /* Incluir padding y border en el ancho total */
+    border: 1px solid #ccc; /* Borde alrededor de cada producto */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+    transition: transform 0.3s; /* Transición suave para el efecto hover */
+}
+
+.item:hover {
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño al pasar el mouse */
+}
+
+/* Estilos para la imagen del producto */
+.item img {
+    max-width: 100%; /* Asegurarse de que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantener la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+}
+
+/* Estilos para el nombre del producto */
+.item h2 {
+    font-size: 18px; /* Tamaño de fuente para el nombre */
+    margin: 10px 0; /* Margen superior e inferior */
+}
+
+/* Estilos para el precio del producto */
+.item p {
+    font-size: 16px; /* Tamaño de fuente para el precio */
+    color: #333; /* Color del texto */
+}
