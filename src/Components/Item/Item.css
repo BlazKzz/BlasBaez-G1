@@ -1,42 +1,42 @@
 .item-container {
-    display: flex; /* Usamos Flexbox para el contenedor */
-    flex-direction: column; /* Los elementos dentro de cada item se apilan verticalmente */
-    margin: 20px; /* Espaciado entre los elementos */
-    width: 300px; /* Ancho fijo para cada item */
-    text-align: center; /* Centrar el texto */
-    border: 1px solid #ddd; /* Borde sutil */
-    border-radius: 10px; /* Bordes redondeados */
-    overflow: hidden; /* Para que el contenido no sobresalga */
-    transition: transform 0.2s, box-shadow 0.2s; /* Transición suave para efectos */
-    background-color: #fff; /* Fondo blanco */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    display: flex; 
+    flex-direction: column; 
+    margin: 20px; 
+    width: 300px; 
+    text-align: center; 
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    transition: transform 0.2s, box-shadow 0.2s; 
+    background-color: #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .item-container:hover {
-    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumentar sombra al pasar el mouse */
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
 .item-link {
-    text-decoration: none; /* Quitar el subrayado del enlace */
-    color: inherit; /* Heredar el color del texto */
+    text-decoration: none; 
+    color: inherit; 
 }
 
 .item-image {
-    width: 100%; /* Hacer que la imagen ocupe todo el ancho del contenedor */
-    height: auto; /* Mantener la relación de aspecto */
-    border-bottom: 1px solid #ddd; /* Borde inferior para separación */
+    width: 100%; 
+    height: auto; 
+    border-bottom: 1px solid #ddd; 
 }
 
 .item-info {
-    padding: 15px; /* Espaciado interno para el texto */
+    padding: 15px; 
 }
 
 .item-list {
-    display: flex; /* Usamos Flexbox para el contenedor de los items */
-    flex-wrap: wrap; /* Permitir que los items se envuelvan en varias filas */
-    justify-content: space-around; /* Espaciado entre los items */
-    max-width: 100%; /* Asegúrate de que el contenedor no exceda el ancho */
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    max-width: 100%; 
 }
 .item-add-button {
     background-color: #171e27;
