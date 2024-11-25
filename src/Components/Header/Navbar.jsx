@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faBars } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faBars, faBagShopping } from '@fortawesome/free-solid-svg-icons';
+import Store from '../../Store/Store'
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
+
+  const cart = Store((state) => state.cart); // Obtener el carrito del Store
+  const cartCount = cart.length;  //Contar la cantidad de productos
+
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -38,7 +43,7 @@ const Navbar = () => {
             <Link to="/Notebookpage">
               <h4>Notebooks</h4>
             </Link>
-            <a href="/category/Ngamer">
+            <a href="/category/ngamer">
               <p>Gamer</p>
             </a>
             <Link to="/products">
@@ -144,7 +149,7 @@ const Navbar = () => {
             <Link to="/products">
               <h4>Monitores</h4>
             </Link>
-            <a href="/category/Monitor">
+            <a href="/category/monitor">
               <p>144Hz o más</p>
             </a>
             <Link to="/products">
@@ -162,9 +167,9 @@ const Navbar = () => {
           onMouseLeave={() => setDropdownOpen(false)}
         >
           <div className="user-icon">
-          <Link to="">
-            <FontAwesomeIcon icon={faUser } /> 
-          </Link>
+            <Link to="">
+              <FontAwesomeIcon icon={faUser } /> 
+            </Link>
           </div>
           {isDropdownOpen && (
             <div className='dropdown-content'>
@@ -173,6 +178,16 @@ const Navbar = () => {
             <Link to="/cerrar-sesion"><p>Cerrar sesión</p></Link>
             </div>
           )}
+        </div>
+        <div className="shopping-cart-icon">
+          <Link to="/cart">
+            <FontAwesomeIcon className="icon-bag" icon={faBagShopping} />
+          </Link>
+          {cartCount > 0 && (
+            <span className='cart-count'>
+              {cartCount}
+            </span>
+          )} 
         </div>
       </nav>
     </header>

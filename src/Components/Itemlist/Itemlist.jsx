@@ -25,7 +25,7 @@ export default function ItemList({ products: initialProducts }){
                     <Loading />
                 </div>
             ):(
-                <div className="products">
+                <div className="item-list">
                     {products.map((prod) =>(
                         <Item {...prod} key={prod.id}/>
                     ))}

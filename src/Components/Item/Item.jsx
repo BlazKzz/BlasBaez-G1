@@ -1,45 +1,27 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { getProducts } from "../../data/asyncMock"; 
-import './Item.css'; 
+import { Link } from "react-router-dom";
+import useStore from "../../Store/Store";
+import "./Item.css";
 
-const ItemCard = ({ product }) => {
-    return (
-        <Link to={`/products/${product.id}`} className="card"> 
-            <img alt={product.name} src={product.img} />
-            <div className="badge">{product.category}</div>
-            <div className="title">{product.name}</div>
-            <div className="price">${product.price.toFixed(2)}</div>
-            <div className="description">{product.description}</div> 
-            <div className="stock">Stock: {product.stock}</div>
-        </Link>
-    );
-};
+export default function Item({ id, name, price, img }) {
+    const addToCart = useStore((state) => state.addToCart);
 
-const Item = () => {
-    const [products, setProducts] = useState([]);
-
-    useEffect(() => {
-        const fetchProducts = async () => {
-            try {
-                const productsData = await getProducts();
-                console.log(productsData); 
-                setProducts(productsData);
-            } catch (error) {
-                console.error("Error fetching products:", error); 
-            }
-        };
-
-        fetchProducts();
-    }, []);
+    const handleAddToCart = () => {
+        const product = { id, name, price, img }; // Puedes agregar más propiedades si lo necesitas
+        addToCart(product);
+    };
 
     return (
-        <div className="container">
-            {products.map(product => (
-                <ItemCard key={product.id} product={product} />
-            ))}
+        <div className="item-container">
+            <Link to={`/products/${id}`} className="item-image-link">
+                <img src={img} alt="Imagen Productos" className="item-image" />
+            </Link>
+            <Link to={`/products/${id}`} className="item-name">
+                {name}
+            </Link>
+            <h4 className="item-price">$ {price}</h4>
+            <button onClick={handleAddToCart} className="item-add-button">
+                Agregar al Carrito
+            </button>
         </div>
     );
-};
-
-export default Item; 
+}

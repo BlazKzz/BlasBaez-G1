@@ -127,6 +127,16 @@
 .user-icon {
   cursor: pointer; 
 }
+.cart-count {
+  position: absolute;
+  background-color: #e11d48; 
+  color: white;
+  border-radius: 9999px; 
+  padding-left: 0.5rem; 
+  padding-right: 0.5rem; 
+  font-size: 0.75rem; 
+  display: inline-block;
+}
 
 @media (max-width: 768px) {
   .mobile-menu-button {
