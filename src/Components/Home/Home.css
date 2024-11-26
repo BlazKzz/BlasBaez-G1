@@ -2,8 +2,9 @@
     width: 100%;
     background-color: #333;
 }
+
 .home-banner {
-    height: 600px;
+    height: 100vh; 
     background-image: url('imagen.jpg');
     background-size: cover;
     background-position: center;
@@ -13,7 +14,6 @@
     color: white;
     text-align: center;
 }
-
 .banner-content {
     padding: 20px;
     color: rgb(255, 251, 251);

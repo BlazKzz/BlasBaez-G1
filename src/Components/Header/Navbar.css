@@ -1,5 +1,5 @@
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -33,7 +33,7 @@
 
 .navbar a {
   position: relative;
-  font-size: 18px;
+  font-size: 20px;
   color: #fff;
   font-weight: 500;
   margin-left: 40px;
@@ -92,10 +92,10 @@
 .dropdown-content h4 {
   font-size: 20px;
   font-weight: 600;
-  margin-right: 20px; 
+  margin: 30px 10px 1px; 
   padding-left: 50px; 
   position: relative;
-  margin: 1px 0; 
+  color: #fff;
 }
 
 .dropdown-content p {
@@ -125,6 +125,11 @@
   display: block; 
 }
 .user-icon {
+  position: relative;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 40px;
   cursor: pointer; 
 }
 .cart-count {
@@ -166,7 +171,6 @@
   .dropdown-content {
     position: static;
     display: none;
-    background-color: transparent;
   }
 
   .dropdown:hover .dropdown-content {

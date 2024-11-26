@@ -40,9 +40,7 @@ const Navbar = () => {
           <a href="/" onClick={toggleDropdown}>Tecnología</a>
           {isDropdownOpen && (
             <div className="dropdown-content">
-            <Link to="/Notebookpage">
-              <h4>Notebooks</h4>
-            </Link>
+                <h4>Notebooks</h4>
             <a href="/category/ngamer">
               <p>Gamer</p>
             </a>
@@ -52,9 +50,7 @@ const Navbar = () => {
             <Link to="/products">
               <p>Convertibles(2-en-1)</p>
             </Link>
-            <Link to="/products">
               <h4>Celulares</h4>
-            </Link>
             <Link to="/products">
               <p>Samsung</p>
             </Link>
@@ -64,9 +60,7 @@ const Navbar = () => {
             <Link to="/products">
               <p>Xiaomi</p>
             </Link>
-            <Link to="/products">
               <h4>Consolas</h4>
-            </Link>
             <Link to="/products">
               <p>Switch</p>
             </Link>
@@ -87,27 +81,21 @@ const Navbar = () => {
         <Link to="/products">Hardware</Link>
         {isDropdownOpen && (
           <div className="dropdown-content">
-            <Link to="/products">
               <h4>Tarjetas de Video</h4>
-            </Link>
             <Link to="/products">
               <p>Nvidia</p>
             </Link>
             <Link to="/products">
               <p>AMD Radeon</p>
             </Link>
-            <Link to="/products">
               <h4>Procesadores</h4>
-            </Link>
             <Link to="/products">
               <p>Intel</p>
             </Link>
             <Link to="/products">
               <p>AMD</p>
             </Link>
-            <Link to="/products">
               <h4>Ram</h4>
-            </Link>
             <Link to="/products">
               <p>DDR4 Desktop</p>
             </Link>
@@ -125,32 +113,23 @@ const Navbar = () => {
         <Link to="/products">Perifericos</Link>
         {isDropdownOpen && (
           <div className="dropdown-content">
-            <Link to="/products">
               <h4>Mouses</h4>
-            </Link>
             <Link to="/products">
-              <p>Opticos</p>
-            </Link>
-            <Link to="/products">
-              <p>Laser</p>
+              <p>Con cable</p>
             </Link>
             <Link to="/products">
               <p>Inalambricos</p>
             </Link>
-            <Link to="/products">
               <h4>Teclados</h4>
-            </Link>
             <Link to="/products">
               <p>Mecanicos</p>
             </Link>
             <Link to="/products">
-              <p>Inalambricos</p>
+              <p>Membrana</p>
             </Link>
-            <Link to="/products">
               <h4>Monitores</h4>
-            </Link>
             <a href="/category/monitor">
-              <p>144Hz o más</p>
+              <p>60Hz o más</p>
             </a>
             <Link to="/products">
               <p>Con FreeSync</p>
@@ -167,17 +146,8 @@ const Navbar = () => {
           onMouseLeave={() => setDropdownOpen(false)}
         >
           <div className="user-icon">
-            <Link to="">
               <FontAwesomeIcon icon={faUser } /> 
-            </Link>
           </div>
-          {isDropdownOpen && (
-            <div className='dropdown-content'>
-            <Link to="/cuenta"><p>Cuenta</p></Link>
-            <Link to="/carrito"><p>Ver Carrito</p></Link>
-            <Link to="/cerrar-sesion"><p>Cerrar sesión</p></Link>
-            </div>
-          )}
         </div>
         <div className="shopping-cart-icon">
           <Link to="/cart">

@@ -1,4 +1,5 @@
 export const products = [
+    // Notebooks Gamer
     {
         id: 1,
         name: 'Notebook Gamer 1',
@@ -35,6 +36,9 @@ export const products = [
         img: '/Ngamer/G4.jpg',
         category: 'ngamer'
     },
+    // Fin Notebooks Gamer
+    
+    // Monitores
     {
         id: 6,
         name: 'Monitor 1',
@@ -71,6 +75,89 @@ export const products = [
         img: '/Monitor_card/Mcard1.webp',
         category: 'monitor'
     },
+    // Fin Monitores
+
+    // Notebooks para estudio
+    {
+        id: 10,
+        name: 'Estudio1',
+        price: 200,
+        description:'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
+        stock: 3,
+        img: '/Nestudio/Estudio1.png',
+        category: 'estudio'
+    },
+    {
+        id: 11,
+        name: 'Estudio2',
+        price: 210,
+        description:'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
+        stock: 4,
+        img: '/Nestudio/Estudio2.png',
+        category: 'estudio'
+    },
+    {
+        id: 12,
+        name: 'Estudio3',
+        price: 207,
+        description:'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
+        stock: 2,
+        img: '/Nestudio/Estudio3.png',
+        category: 'estudio'
+    },
+    {
+        id: 13,
+        name: 'Estudio4',
+        price: 220,
+        description:'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
+        stock: 3,
+        img: '/Nestudio/Estudio4.png',
+        category: 'estudio'
+    },
+        // Fin Notebooks para estudio
+
+        // Notebooks Convertibles
+    {
+        id: 14,
+        name: 'convertible1',
+        price: 270,
+        description:'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
+        stock: 4,
+        img: '/Nconvertible/convertible1.png',
+        category: 'convertible',
+    },
+    {
+        id: 15,
+        name: 'convertible2',
+        price: 270,
+        description:'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
+        stock: 5,
+        img: '/Nconvertible/convertible2.png',
+        category: 'convertible',
+    },
+    {
+        id: 16,
+        name: 'convertible3',
+        price: 300,
+        description:'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
+        stock: 2,
+        img: '/Nconvertible/convertible3.jpg',
+        category: 'convertible',
+    },
+    {
+        id: 17,
+        name: 'convertible4',
+        price: 350,
+        description:'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
+        stock: 3,
+        img: '/Nconvertible/convertible4.jpg',
+        category: 'convertible',
+    },
+            // Fin Notebooks Convertibles
+
+            // Celulares Samsung
+    
+
 ];
 
 export const getProducts = () => {
