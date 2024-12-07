@@ -1,6 +1,8 @@
 .item-container {
     display: flex; 
     flex-direction: column; 
+    justify-content: space-between;
+    
     margin: 20px; 
     width: 300px; 
     text-align: center; 
@@ -16,12 +18,16 @@
     transform: translateY(-5px); 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
-
+.item-name{
+    color:black
+}
 .item-link {
     text-decoration: none; 
     color: inherit; 
 }
-
+.item-price {
+    color:black
+}
 .item-image {
     width: 100%; 
     height: auto; 
@@ -36,13 +42,9 @@
     display: flex; 
     flex-wrap: wrap; 
     justify-content: space-around; 
-<<<<<<< HEAD
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-=======
-    max-width: 100%; 
->>>>>>> 0676fade78831897232b0cf18b42ad1018f60859
 }
 .item-add-button {
     background-color: #171e27;

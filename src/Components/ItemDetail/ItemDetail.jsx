@@ -2,9 +2,18 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getProductById } from '../../data/asyncMock';
 import Loading from '../Loading/Loading';
+import useStore from "../../Store/Store";
 import './ItemDetail.css';
 
 export default function ItemDetail() {
+    const addToCart = useStore((state) => state.addToCart);
+    
+    const handleAddToCart = () => {
+        if (product) {
+            const { id, name, price, img } = product;
+            addToCart({ id, name, price, img });
+        }
+    };
     const { productId } = useParams();
     const [product, setProduct] = useState(null);
     const [loading, setLoading] = useState(true);
@@ -42,9 +51,11 @@ export default function ItemDetail() {
     const calculateTotalPrice = () => {
         return product ? product.price * quantity : 0;
     };
+    
 
     if (loading) return <Loading />;
     if (!product) return <div className="error-message">Producto no encontrado</div>;
+    
 
     return (
         <div className="item-detail-container">
@@ -68,6 +79,9 @@ export default function ItemDetail() {
                     {/* Botón de compra */}
                     <button className="buy-button">
                         Comprar
+                    </button>
+                    <button onClick={handleAddToCart} className="item-add-button">
+                        Agregar al Carrito
                     </button>
                 </div>
             </div>

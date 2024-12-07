@@ -34,29 +34,13 @@ export default function HomePage() {
             <div className="featured-categorie">
                 <h2>Categorías populares</h2>
                 <div className="categories-grids">
-                    <Link to="/notebooks-gamer" className="category-cards">
-                        <img src="./public/Ngamer/G1.webp" alt="Notebooks gamer" />
-                        <h3>Notebooks gamer</h3>
+                    <Link to="/category/ngamer" className="category-cards">
+                        <img src="./public/Ngamer/G3.jpg" alt="Notebooks gamer" />
+                        <h3>Notebooks</h3>
                     </Link>
-                    <Link to="/ps5" className="category-cards">
-                        <img src="./public/Ngamer/G1.webp" alt="PS5" />
-                        <h3>xd</h3>
-                    </Link>
-                    <Link to="/smartphones-5g" className="category-cards">
-                        <img src="./public/Ngamer/G1.webp" alt="Smartphones 5G" />
-                        <h3>xd </h3>
-                    </Link>
-                    <Link to="/tarjetas-de-video-gamer" className="category-cards">
-                        <img src="./public/Ngamer/G1.webp" alt="Monitores gamer" />
-                        <h3>Tarjetas de video gamer</h3>
-                    </Link>
-                    <Link to="/tarjetas-de-video-gamer" className="category-cards">
-                        <img src="./public/Ngamer/G1.webp" alt="Monitores gamer" />
-                        <h3>Tarjetas de video gamer</h3>
-                    </Link>
-                    <Link to="/tarjetas-de-video-gamer" className="category-cards">
-                        <img src="./public/Ngamer/G1.webp" alt="Monitores gamer" />
-                        <h3>Tarjetas de video gamer</h3>
+                    <Link to="/category/amd" className="category-cards">
+                        <img src="./public/Pcgamer/amd4.png" alt="Pc gamer" />
+                        <h3>ADM</h3>
                     </Link>
                 </div>
             </div>

@@ -37,49 +37,9 @@ export const products = [
         category: 'ngamer'
     },
     // Fin Notebooks Gamer
-    
-    // Monitores
-    {
-        id: 6,
-        name: 'Monitor 1',
-        price: 999990,
-        description: 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
-        stock: 8,
-        img: '/Monitor_card/Mcard1.webp',
-        category: 'monitor'
-    },
-    {
-        id: 7,
-        name: 'Monitor 2',
-        price: 999990,
-        description: 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
-        stock: 8,
-        img: '/Monitor_card/Mcard1.webp',
-        category: 'monitor'
-    },
-    {
-        id: 8,
-        name: 'Monitor 3',
-        price: 999990,
-        description: 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
-        stock: 8,
-        img: '/Monitor_card/Mcard1.webp',
-        category: 'monitor'
-    },
-    {
-        id: 9,
-        name: 'Monitor 4',
-        price: 999990,
-        description: 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
-        stock: 8,
-        img: '/Monitor_card/Mcard1.webp',
-        category: 'monitor'
-    },
-    // Fin Monitores
-
     // Notebooks para estudio
     {
-        id: 10,
+        id: 5,
         name: 'Estudio1',
         price: 200,
         description:'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
@@ -88,7 +48,7 @@ export const products = [
         category: 'estudio'
     },
     {
-        id: 11,
+        id: 6,
         name: 'Estudio2',
         price: 210,
         description:'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
@@ -97,7 +57,7 @@ export const products = [
         category: 'estudio'
     },
     {
-        id: 12,
+        id: 7,
         name: 'Estudio3',
         price: 207,
         description:'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
@@ -106,7 +66,7 @@ export const products = [
         category: 'estudio'
     },
     {
-        id: 13,
+        id: 8,
         name: 'Estudio4',
         price: 220,
         description:'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
@@ -118,7 +78,7 @@ export const products = [
 
         // Notebooks Convertibles
     {
-        id: 14,
+        id: 9,
         name: 'convertible1',
         price: 270,
         description:'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
@@ -127,7 +87,7 @@ export const products = [
         category: 'convertible',
     },
     {
-        id: 15,
+        id: 10,
         name: 'convertible2',
         price: 270,
         description:'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
@@ -136,7 +96,7 @@ export const products = [
         category: 'convertible',
     },
     {
-        id: 16,
+        id: 11,
         name: 'convertible3',
         price: 300,
         description:'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
@@ -145,7 +105,7 @@ export const products = [
         category: 'convertible',
     },
     {
-        id: 17,
+        id: 12,
         name: 'convertible4',
         price: 350,
         description:'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
@@ -153,9 +113,84 @@ export const products = [
         img: '/Nconvertible/convertible4.jpg',
         category: 'convertible',
     },
-            // Fin Notebooks Convertibles
+         // Fin Notebooks Convertibles
+         // Inicio Pcgamer AMD
+    {
+        id:13,
+        name: 'Pcgamer1',
+        price: 603,
+        description:'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
+        stock: 4,
+        img: '/Pcgamer/amd1.png',
+        category:'amd',
+    },
+    {
+        id:14,
+        name: 'Pcgamer2',
+        price: 524,
+        description:'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
+        stock: 4,
+        img: '/Pcgamer/amd2.png',
+        category:'amd',
+    },
+    {
+        id:15,
+        name: 'Pcgamer3',
+        price: 1009,
+        description:'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
+        stock: 4,
+        img: '/Pcgamer/amd3.png',
+        category:'amd',
+    },
+    {
+        id:16,
+        name: 'Pcgamer4',
+        price: 1139,
+        description:'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
+        stock: 4,
+        img: '/Pcgamer/amd4.png',
+        category:'amd',
+    },
+    // Fin Pcgamer AMD
+    // Inicio Pcgamer INTEL
+    {
+        id:17,
+        name: 'Pcgamer5',
+        price: 678,
+        description:'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
+        stock: 4,
+        img: '/Pcgamer/intel1.png',
+        category:'intel',
+    },
+    {
+        id:18,
+        name: 'Pcgamer6',
+        price: 1099,
+        description:'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
+        stock: 4,
+        img: '/Pcgamer/intel2.png',
+        category:'intel',
+    },
+    {
+        id:19,
+        name: 'Pcgamer7',
+        price: 624,
+        description:'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
+        stock: 4,
+        img: '/Pcgamer/intel3.png',
+        category:'intel',
+    },
+    {
+        id:20,
+        name: 'Pcgamer8',
+        price: 1118,
+        description:'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
+        stock: 4,
+        img: '/Pcgamer/intel4.png',
+        category:'intel',
+    },
+    // Fin Pcgamer Intel
 
-            // Celulares Samsung
     
 
 ];

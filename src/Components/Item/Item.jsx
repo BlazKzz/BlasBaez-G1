@@ -6,7 +6,7 @@ export default function Item({ id, name, price, img }) {
     const addToCart = useStore((state) => state.addToCart);
 
     const handleAddToCart = () => {
-        const product = { id, name, price, img }; // Puedes agregar más propiedades si lo necesitas
+        const product = { id, name, price, img }; 
         addToCart(product);
     };
 
@@ -16,7 +16,7 @@ export default function Item({ id, name, price, img }) {
                 <img src={img} alt="Imagen Productos" className="item-image" />
             </Link>
             <Link to={`/products/${id}`} className="item-name">
-                {name}
+                <h3>{name}</h3>
             </Link>
             <h4 className="item-price">$ {price}</h4>
             <button onClick={handleAddToCart} className="item-add-button">
