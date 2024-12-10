@@ -25,14 +25,14 @@
 }
 
 .banner-subtitle {
-    font-size: 24px;
-    margin-bottom: 30px;
+    font-size: 40px;
+    margin-bottom: 70px;
 }
 
 .shop-now-btn {
     display: inline-block;
-    padding: 15px 40px;
-    background-color: #2d3a4b;
+    padding: 20px 50px;
+    background-color: #364d6b;
     color: white;
     text-decoration: none;
     text-transform: uppercase;
@@ -64,7 +64,7 @@
     overflow: hidden;
     border-radius: 8px;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 252, 252);
 }
 
 .category-cards img {

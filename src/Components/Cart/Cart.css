@@ -12,6 +12,7 @@
     font-weight: bold;
     margin-bottom: 20px;
     text-align: center;
+    color: black
 }
 
 .cart-empty-message {
@@ -33,17 +34,19 @@
 }
 
 .cart-item-image {
-    width: 50px; 
-    height: 50px;
-    margin-right: 10px;
+    width: 300px; 
+    height: 300px;
+    margin-right: 15px;
 }
 
 .cart-item-name {
     flex-grow: 1;
+    color: black
 }
 
 .cart-item-price {
     margin-right: 10px;
+    color: black
 }
 
 .remove-button {
@@ -57,4 +60,34 @@
 
 .remove-button:hover {
     background-color: #ff1a1a;
+}
+.clear-cart-button {
+    color: white; 
+    background-color: #ff0000; 
+    border: none; 
+    padding: 10px 10px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: background-color 0.3s, transform 0.2s; 
+    margin-top: 10px; 
+}
+
+.clear-cart-button:hover {
+    background-color: #7a1818; 
+    transform: scale(1.05); 
+}
+
+.clear-cart-button:active {
+    transform: scale(0.95); 
+}
+.quantity-controls{
+    color: black;
+}
+.cart-total {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    color: black;
 }

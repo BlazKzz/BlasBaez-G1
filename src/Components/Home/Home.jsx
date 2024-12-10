@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Home.css";
-import CardSlider from "../Slider/Slider.";
+import CardSlider from "../Slider/Slider";
 import Loading from "../Loading/Loading"
 import React, { useState, useEffect } from 'react';
 
@@ -36,7 +36,7 @@ export default function HomePage() {
                 <div className="categories-grids">
                     <Link to="/category/ngamer" className="category-cards">
                         <img src="./public/Ngamer/G3.jpg" alt="Notebooks gamer" />
-                        <h3>Notebooks</h3>
+                        <h3>Notebooks Gamer</h3>
                     </Link>
                     <Link to="/category/amd" className="category-cards">
                         <img src="./public/Pcgamer/amd4.png" alt="Pc gamer" />

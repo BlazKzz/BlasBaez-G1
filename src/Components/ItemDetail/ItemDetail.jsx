@@ -61,7 +61,7 @@ export default function ItemDetail() {
         <div className="item-detail-container">
             <div className="item-detail-grid">
                 <div className="item-detail-image">
-                    <img src={product.img} alt={product.name} /> {/* Imagen única del producto */}
+                    <img src={product.img} alt={product.name} /> 
                 </div>
                 <div className="item-detail-info">
                     <h1>{product.name}</h1>

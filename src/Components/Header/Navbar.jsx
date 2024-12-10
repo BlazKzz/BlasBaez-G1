@@ -5,7 +5,7 @@ import Store from '../../Store/Store'
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+export default function Navbar (){
 
   const cart = Store((state) => state.cart);
   const cartCount = cart.length; 
@@ -41,15 +41,9 @@ const Navbar = () => {
             {isDropdownOpen && (
             <div className="dropdown-content">
                 <h4>Categorias</h4>
-              <Link to="/category/ngamer">
-                <p>Gamer</p>
-              </Link>  
-              <Link to="/category/estudio">
-                <p>Trabajo y estudios</p>
-              </Link>
-              <Link to="/category/convertible">
-                <p>Convertibles(2-en-1)</p>
-              </Link>
+              <Link to="/category/ngamer"><p>Gamer</p></Link>  
+              <Link to="/category/estudio"><p>Trabajo y estudios</p></Link>
+              <Link to="/category/convertible"><p>Convertibles(2-en-1)</p></Link>
             </div>
           )}
         </div>
@@ -62,43 +56,27 @@ const Navbar = () => {
           {isDropdownOpen && (
             <div className="dropdown-content">
                 <h4>Categorias</h4>
-              <Link to="/category/amd">
-                <p>AMD</p>
-              </Link>
-              <Link to="/category/intel">
-                <p>INTEL</p>
-              </Link>
+              <Link to="/category/amd"><p>AMD</p></Link>
+              <Link to="/category/intel"><p>INTEL</p></Link>
             </div>
             )}
         </div>
         <div>
-          <Link to="/products">
-            Nosotros
-          </Link>
+          <Link to="/about">Nosotros</Link>
         </div>
         <div>
-          <Link to="/products">
-            Contacto
-          </Link>
+          <Link to="/contact">Contacto</Link>
         </div>
         <div className="user-icon">
-          <Link to="/">
-            <FontAwesomeIcon icon={faUser } /> 
-          </Link>
+          <Link to="/"><FontAwesomeIcon icon={faUser } /> </Link>
         </div>
           <div className="shopping-cart-icon">
-            <Link to="/cart">
-              <FontAwesomeIcon className="icon-bag" icon={faBagShopping} />
-            </Link>
+            <Link to="/cart"><FontAwesomeIcon className="icon-bag" icon={faBagShopping} /></Link>
             {cartCount > 0 && (
-              <span className='cart-count'>
-                {cartCount}
-              </span>
+              <span className='cart-count'>{cartCount}</span>
             )} 
           </div>
       </nav>
     </header>
   );
 };
-
-export default Navbar;
