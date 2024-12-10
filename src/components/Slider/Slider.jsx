@@ -3,7 +3,7 @@ import './Slider.css';
 import { faChevronRight, faChevronLeft} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
-// Array de imagenes con enlaces
+// Array de imagenes 
 const images = [
     { src: '/public/Ngamer/G1.webp', href: '/' },
     { src: '/public/Pcgamer/amd4.png', href: '/' },
