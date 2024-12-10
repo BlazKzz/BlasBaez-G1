@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import useStore from "../../Store/Store";
+import useStore from "../../store/Store";
 import "./Item.css";
 
 export default function Item({ id, name, price, img }) {

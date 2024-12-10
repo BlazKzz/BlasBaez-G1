@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getProductById } from '../../data/asyncMock';
 import Loading from '../Loading/Loading';
-import useStore from "../../Store/Store";
+import useStore from "../../store/Store";
 import './ItemDetail.css';
 
 export default function ItemDetail() {

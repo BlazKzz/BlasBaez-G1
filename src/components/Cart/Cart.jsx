@@ -1,4 +1,4 @@
-import Store from "../../Store/Store";
+import Store from "../../store/Store";
 import Loading from "../Loading/Loading";
 import React, { useState, useEffect } from 'react';
 import "./Cart.css";
